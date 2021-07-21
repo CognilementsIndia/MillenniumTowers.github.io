@@ -33,50 +33,57 @@
 <li><a href="contact.html">Contact Us</a></li>
 </ul>
 <div class="form-popup" id="myForm"> 
-  <form class="form-container" id="brochureForm" onsubmit="return: false;">
+  <form class="form-container" id="brochureFormValidation" action="enquiry.php" method="POST">
+    <input type="hidden" value="1" name="brochure"> 
+    <label  for="fname"><b>First Name</b><span class="required">*</span></label>
+    <input type="text" id="firstname" placeholder="Enter First Name" name="fname" required>
 
-    <label  for="fname"><b>First Name</b></label>
-    <input type="text" id="fname" placeholder="Enter First Name" name="fname" required>
+    <label  for="lname"><b>Last Name</b><span class="required">*</span></label>
+    <input type="text" id="lname" placeholder="Enter Last Name" name="lastname" required>
 
-    <label  for="lname"><b>Last Name</b></label>
-    <input type="text" id="lname" placeholder="Enter Last Name" name="lname" required>
-
-    <label for="phone"><b>Phone Number</b></label>
+    <label for="phone"><b>Phone Number</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Phone Number" name="phone" required>
 
 
-    <label for="psw"><b>Email</b></label>
+    <label for="psw"><b>Email</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Email Address" name="email" required>
+    
+    <label for="city"><b>City</b><span class="required">*</span></label>
+    <input type="text" placeholder="Enter Your City" name="city" required>
 
-    <button type="submit" id="submit-form" value="submit" class="btn" name="submit">Submit</button>
+    <button type="submit" value="submit" class="btn" name="submit">Submit</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
 	
 <div class="form-popup" id="enquiryForm"> 
-  <form class="form-container" action="enquiry.php" method="post">
+  <form class="form-container" action="enquiry.php" method="POST">
 
-    <label  for="name"><b>Name</b></label>
-    <input type="text" id="fname" placeholder="Enter First Name" name="name" required>
+    <label  for="name"><b>Name</b><span class="required">*</span></label>
+    <input type="text" id="fname" placeholder="Enter First Name" name="fname" required>
 
-    <label for="phone"><b>Phone Number</b></label>
+    <label for="phone"><b>Phone Number</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Phone Number" name="phone" required>
 
 
-    <label for="email"><b>Email</b></label>
+    <label for="email"><b>Email</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Email Address" name="email" required>
+    
+    <label for="city"><b>City</b><span class="required">*</span></label>
+    <input type="text" placeholder="Enter Your City" name="city" required>
 
     <label  for="subject"><b>Subject</b></label>
-    <input type="text" placeholder="Enter a Subject Line" name="subject" required>
+    <input type="text" placeholder="Enter a Subject Line" name="sub" required>
 
     <label  for="msg"><b>Your Message</b></label>
-    <input type="text" placeholder="Enter Your Message Here" name="message" required>
+    <input type="text" placeholder="Enter Your Message Here" name="msg" required>
 
-    <button type="submit" id="submit-form" value="submit" class="btn" name="submit-enquiry">Submit</button>
+    <button type="submit" value="submit" class="btn" name="submit-enquiry">Submit</button>
     <button type="button" class="btn cancel" onclick="closeEnquiryForm()">Close</button>
-    	
-   </form>
+    </form>
+    
 </div>
+
 
 <a href="#" onclick="openEnquiryForm()" class="float1">
     <span class="wrap-icon">
@@ -89,7 +96,7 @@
             <i class="icon-phone my-float"></i>
         </span>
 
-    <span class="popuptext" id="myPopup">+91 8448272360</span>
+    <span class="popuptext" id="myPopup">+91 9766728738</span>
 </a>
 	
  <a href="#" onclick="openForm()" class="float3">
@@ -187,7 +194,7 @@
 <address><span class="wrap-icon">
 <span class="icon-map-pin"></span>&nbsp; S.No 36/2, Bangalore-Mumbai Highway, Near Supreme HQ, Baner, Pune- 411045</address>
 <span class="wrap-icon">
-<span class="icon-phone"></span>&nbsp;&nbsp;<a href="tel://11234567890">+91 8448272360</a><br><br>
+<span class="icon-phone"></span>&nbsp;&nbsp;<a href="tel:9766728738">+91 9766728738</a><br><br>
 <span class="wrap-icon">
 <span class="icon-envelope"></span>&nbsp;&nbsp;<a href="mailto:Sales@millenniumtower.in">sales@millenniumtower.in</a>
 </div> 
@@ -221,7 +228,7 @@
 </div> 
 <div class="row mt-5">
 <div class="col-12 text-center">
-<p class="mb-0">Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> Millennium Tower is Proudly Powered by <a href="../../index.html" target="_blank" rel="nofollow noopener">Cognilements</a></p>
+<p class="mb-0">Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> Millennium Tower is Proudly Powered by <a href="https://cognilements.com/" target="_blank" rel="nofollow noopener">Cognilements</a></p>
 </div>
 </div>
 </div> 
@@ -252,23 +259,3 @@
 <script defer="" src="../../beacon.min.js" data-cf-beacon='{"rayId":"66137a117ac10e1c","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'></script>
 </body>
 </html>
-
-<?php
-
-$name = $_GET['name'];
-$phonenumber = $_GET['phone'];
-$email = $_GET['email'];
-$sub = $_GET['subject'];
-$msg = $_GET['message'];
-
-echo "name";
-echo "phone";
-
-$query = "INSERT INTO ENQUIRY VALUES('name', 'phonenumber', 'email', 'sub', 'msg')";
-$data = mysqli_query($conn, $query);
-
-if($data){
-    echo "Thanyou for submitting"
-}
-
-?>
