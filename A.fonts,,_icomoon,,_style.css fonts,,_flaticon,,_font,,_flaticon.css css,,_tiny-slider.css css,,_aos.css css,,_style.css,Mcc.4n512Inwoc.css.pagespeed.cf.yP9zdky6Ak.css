@@ -440,6 +440,40 @@
 	opacity: 1;
   }
 
+/*Floor Plan*/
+.section-floor-plan{
+	background-color: black;
+	position: relative;
+	min-height: 500px ;
+}
+.floor-plan-item{
+	border: solid 3px rgba(53, 52, 52, 0.877);
+}
+.floor-plan-img{
+	position:relative;
+	z-index:1;
+	padding: 2rem;
+	cursor: pointer;
+	
+}
+
+.floor-plan-img:hover{
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.2); 
+}
+
+.floor-plan-content{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	background-color: #4c80c0;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+
+
 /*POP UP BROCHURE FORM*/
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
