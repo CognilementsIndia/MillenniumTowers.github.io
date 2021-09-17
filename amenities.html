@@ -8,6 +8,30 @@
 <link href="../../css2.css?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css fonts,,_flaticon,,_font,,_flaticon.css css,,_tiny-slider.css css,,_aos.css css,,_style.css,Mcc.4n512Inwoc.css.pagespeed.cf.yP9zdky6Ak.css">
 <title>Maruti Millennium Towers</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-205538400-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-205538400-1');
+</script>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1155069701639683');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1155069701639683&ev=PageView&noscript=1"
+/></noscript>
 </head>
 <body>
 <div class="site-mobile-menu site-navbar-target">
@@ -30,23 +54,27 @@
 <li><a href="about.html">About</a></li>
 <li><a href="specifications.html">Specifications</a></li>
 <li class="active"><a href="amenities.html">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
 <li><a href="contact.html">Contact Us</a></li>
 </ul>
 <div class="form-popup" id="myForm"> 
-  <form class="form-container" id="brochureForm" onsubmit="return: false;">
+  <form class="form-container" id="brochureForm" action="enquiry.php" method="POST">
 
-    <label  for="fname"><b>First Name</b></label>
+    <label  for="fname"><b>First Name</b><span class="required">*</span></label>
     <input type="text" id="fname" placeholder="Enter First Name" name="fname" required>
 
-    <label  for="lname"><b>Last Name</b></label>
+    <label  for="lname"><b>Last Name</b><span class="required">*</span></label>
     <input type="text" id="lname" placeholder="Enter Last Name" name="lname" required>
 
-    <label for="phone"><b>Phone Number</b></label>
+    <label for="phone"><b>Phone Number</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Phone Number" name="phone" required>
 
 
-    <label for="psw"><b>Email</b></label>
+    <label for="psw"><b>Email</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Email Address" name="email" required>
+    
+    <label for="city"><b>City</b><span class="required">*</span></label>
+    <input type="text" placeholder="Enter Your City" name="city" required>
 
     <button type="submit" id="submit-form" value="submit" class="btn" name="submit">Submit</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
@@ -54,17 +82,20 @@
 </div>
 	
 <div class="form-popup" id="enquiryForm"> 
-  <form class="form-container">
+  <form class="form-container" action="enquiry.php" method="POST">
 
-    <label  for="name"><b>Name</b></label>
+    <label  for="name"><b>Name</b><span class="required">*</span></label>
     <input type="text" id="fname" placeholder="Enter First Name" name="name" required>
 
-    <label for="phone"><b>Phone Number</b></label>
+    <label for="phone"><b>Phone Number</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Phone Number" name="phone" required>
 
 
-    <label for="email"><b>Email</b></label>
+    <label for="email"><b>Email</b><span class="required">*</span></label>
     <input type="text" placeholder="Enter Email Address" name="email" required>
+    
+        <label for="city"><b>City</b><span class="required">*</span></label>
+    <input type="text" placeholder="Enter Your City" name="city" required>
 
     <label  for="subject"><b>Subject</b></label>
     <input type="text" placeholder="Enter a Subject Line" name="subject" required>
@@ -72,10 +103,11 @@
     <label  for="msg"><b>Your Message</b></label>
     <input type="text" placeholder="Enter Your Message Here" name="message" required>
 
-    <button type="submit" id="submit-form" value="submit" class="btn" name="submit-enquiry">Submit</button>
+    <button type="submit" id="submit-form" value="submit"  class="btn" name="submit-enquiry">Submit</button>
     <button type="button" class="btn cancel" onclick="closeEnquiryForm()">Close</button>
     	
    </form>
+
 </div>
 
 
@@ -84,20 +116,43 @@
         <i class="icon-pencil my-float"></i>
     </span>
 </a>
+<div class="label-container container1">
+    <div class="label-text">Enquire Here</div>
+    <i class="icon-play label-arrow"></i>
+</div>
 
     <a href="tel:8448272360" class="float2 popup"  onclick="myFunction()">
         <span class="wrap-icon">
             <i class="icon-phone my-float"></i>
         </span>
-
-    <span class="popuptext" id="myPopup">+91 8448272360</span>
+    <span class="popuptext" id="myPopup">+91 9766728738</span>
 </a>
+<div class="label-container container2">
+    <div class="label-text">Give us a Ring </div>
+    <i class="icon-play label-arrow"></i>
+</div>
 	
  <a href="#" onclick="openForm()" class="float3">
      <span class="wrap-icon">
          <i class="icon-file-text my-float"></i>
      </span>
  </a>
+ <div class="label-container container3">
+    <div class="label-text">Contact Us</div>
+    <i class="icon-play label-arrow"></i>
+</div>
+ 
+ <a href="#" class="float4">
+    <span class="wrap-icon">
+        <span class="my-float float-360">360 ⁰</span>
+        <!-- <i class="icon-life-bouy "></i> -->
+    </span>
+</a>
+<div class="label-container container4">
+    <div class="label-text">Get a 360 tour</div>
+    <i class="icon-play label-arrow"></i>
+</div>
+
 	
 <a href="#" class="burger me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
 <span></span>
@@ -123,7 +178,7 @@
 <div class="row justify-content-center text-center mb-5">	
 <div class="col-lg-12">
 <h2 class="font-weight-bold heading text-primary mb-4">Project Highlights</h2>
-<p class="text-black-50">Millennium Tower boasts of the following amenities:</p>
+<p class="text-white">Millennium Tower boasts of the following amenities:</p>
 </div>
 </div>
 
@@ -132,55 +187,86 @@
 <div class="property-slider-wrap">
 <div class="property-slider">
 <div class="property-item">
-<img src="images/conf-room.jpg" alt="Image" class="img-fluid">
-</a>
-<div class="property-content">
-<div>
-<h5 class="text-black mb-3 font-weight-bold text-center">Multiple Conf. Room</h5>
-<p class="text-black-50 text-center">Convenience in conducting business meets is a top priority.</p>
-</div>
-</div>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/conf-room.jpg" alt="Image" class="img-fluid">
+      </div>
+      <div class="flip-box-back">
+        <h5 class="text-black mb-3 font-weight-xtra-bold text-center">Multiple Conf. Room</h5>
+        <p class="text-white text-center">Convenience in business meets is a top priority.</p>
+      </div>
+    </div>
+  </div>  
 </div> 
 <div class="property-item">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
 <img src="images/meeting.png" alt="Image" class="img-fluid">
-</a>
-<div class="property-content">
-<div>
-<h5 class="text-black mb-3 font-weight-bold text-center">Common Meeting Room</h5>
-<p class="text-black-50 text-center">For last minute or short, planned briefs with the associates.</p>
+</div>
+<div class="flip-box-back">
+  <h5 class="text-black mb-3 font-weight-xtra-bold text-center">Common Meeting Room</h5>
+<p class="text-white text-center">For last minute or short, planned briefs with the associates.</p>
 </div>
 </div>
 </div> 
+</div>
 <div class="property-item">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
 <img src="images/cafe.png" alt="Image" class="img-fluid">
-</a>
-<div class="property-content">
-<div>
-<h5 class="text-black mb-3 font-weight-bold text-center">Multicuisine Cafeteria</h5>
-<p class="text-black-50 text-center">Because diversity in taste is important for diversified culture.</p>
+</div>
+<div class="flip-box-back">
+  <h5 class="text-black mb-3 font-weight-xtra-bold text-center">Multicuisine Cafeteria</h5>
+<p class="text-white text-center">Because diversity in taste is important for diversified culture.</p>
 </div>
 </div>
 </div> 
+</div> 
 <div class="property-item">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
 <img src="images/elevators.png" alt="Image" class="img-fluid">
-</a>
-<div class="property-content">
-<div>
-<h5 class="text-black mb-3 font-weight-bold text-center">Elevators</h5>
-<p class="text-black-50 text-center">Talk about leveling up!</p>
+</div>
+<div class="flip-box-back">
+  <h5 class="text-black mb-3 font-weight-xtra-bold text-center">Elevators</h5>
+<p class="text-white text-center">We aim high, we achieve it and aim higher hence we talk about leveling up!</p>
 </div>
 </div>
 </div> 
+</div> 
+ 
 <div class="property-item">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front"> 
 <img src="images/wifi.jpg" alt="Image" class="img-fluid">
-</a>
-<div class="property-content">
-<div>
-<h5 class="text-black mb-3 font-weight-bold text-center">High Speed Internet With Multiple ISPS</h5>
-<p class="text-black-50 text-center">Wheel of the professional's vehicle.</p>
+</div>
+<div class="flip-box-back">
+  <h5 class="text-black mb-3 font-weight-xtra-bold text-center">High Speed Internet With Multiple ISPS</h5>
+  <p class="text-white text-center">Wheel of the professional's vehicle.</p>
 </div>
 </div>
 </div> 
+</div>  
+
+<div class="property-item">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front"> 
+<img src="images/entrance.png" alt="Image" class="img-fluid">
+</div>
+<div class="flip-box-back">
+  <h5 class="text-black mb-3 font-weight-xtra-bold text-center">Entrance Lobby</h5>
+  <p class="text-white text-center"> To accommodate your ambitions, a grand entrance lobby.</p>
+</div>
+</div>
+</div> 
+</div>
+
 <div class="property-item">
 <img src="images/entrance.png" alt="Image" class="img-fluid">
 </a>
@@ -219,7 +305,7 @@
 <address><span class="wrap-icon">
 <span class="icon-map-pin"></span>&nbsp; S.No 36/2, Bangalore-Mumbai Highway, Near Supreme HQ, Baner, Pune- 411045</address>
 <span class="wrap-icon">
-<span class="icon-phone"></span>&nbsp;&nbsp;<a href="tel://11234567890">+91 8448272360</a><br><br>
+<span class="icon-phone"></span>&nbsp;&nbsp;<a href="tel:9766728738">+91 9766728738</a><br><br>
 <span class="wrap-icon">
 <span class="icon-envelope"></span>&nbsp;&nbsp;<a href="mailto:sales@millenniumtower.in">sales@millenniumtower.in</a>
 </div> 
@@ -253,7 +339,7 @@
 </div> 
 <div class="row mt-5">
 <div class="col-12 text-center">
-<p class="mb-0">Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> Millennium Tower is Proudly Powered by <a href="../../index.html" target="_blank" rel="nofollow noopener">Cognilements</a></p>
+<p class="mb-0">Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> Millennium Tower is Proudly Powered by <a href="https://cognilements.com/" target="_blank" rel="nofollow noopener">Cognilements</a></p>
 </div>
 </div>
 </div> 

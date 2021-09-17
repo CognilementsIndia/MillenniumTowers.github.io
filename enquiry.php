@@ -1,5 +1,7 @@
 <?php
-
+//  echo "<pre>";
+//      print_r($_POST);
+//     //  die();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $email = $_POST['email'];
@@ -46,26 +48,19 @@ try {
             'sub' => $_POST['sub'],
             'msg' => $_POST['msg']
         ]);
-        
+        print_r($x);
+        die();
         if($x){
-
-            $to = "bhakti12kashalkar@example.com"; // this is your Email address
-            $from = $_POST['email']; // this is the sender's Email address
-            $first_name = $_POST['fname'];
-            $subject = $_POST['sub']
-            $message = $first_name . " " . " wrote the following:" . "\n\n" . $_POST['msg'];
-        
-            
-                echo '<script>
-        	            alert("Submitted Successfully");
-        	            window.location.href = "https://millenniumtower.in/";
-        	       </script>';
+            echo '<script>
+            alert("Submitted Successfully");
+            window.location.href = "https://millenniumtower.in/";
+            </script>';
         }
         else{
         	echo '<script>
-        	            alert("Something went wrong! Try again.");
-        	            window.location.href = "https://millenniumtower.in/";
-        	        </script>';
+        	alert("Something went wrong! Try again.");
+        	window.location.href = "https://millenniumtower.in/";
+        	</script>';
         }
   }    
  if(isset($_POST['brochure'])){

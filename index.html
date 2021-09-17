@@ -8,6 +8,30 @@
 <link href="../../css2.css?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css fonts,,_flaticon,,_font,,_flaticon.css css,,_tiny-slider.css css,,_aos.css css,,_style.css,Mcc.4n512Inwoc.css.pagespeed.cf.yP9zdky6Ak.css">
 <title>Maruti Millennium Towers</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-205538400-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-205538400-1');
+</script>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1155069701639683');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1155069701639683&ev=PageView&noscript=1"
+/></noscript>
 </head>
 <body>
 <div class="site-mobile-menu site-navbar-target">
@@ -30,6 +54,7 @@
 <li><a href="about.html">About</a></li>
 <li><a href="specifications.html">Specifications</a></li>
 <li><a href="amenities.html">Amenities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
 <li><a href="contact.html">Contact Us</a></li>
 </ul>
 <div class="form-popup" id="myForm"> 
@@ -57,8 +82,8 @@
 </div>
 	
 <div class="form-popup" id="enquiryForm"> 
-  <form class="form-container" action="enquiry.php" method="POST">
-
+  <form class="form-container" action="enquirySubmit.php" method="POST">
+     <input type="hidden" value="1" name="enquiry"> 
     <label  for="name"><b>Name</b><span class="required">*</span></label>
     <input type="text" id="fname" placeholder="Enter First Name" name="fname" required>
 
@@ -90,20 +115,42 @@
         <i class="icon-pencil my-float"></i>
     </span>
 </a>
+<div class="label-container container1">
+    <div class="label-text">Enquire Here</div>
+    <i class="icon-play label-arrow"></i>
+</div>
 
     <a href="tel:8448272360" class="float2 popup"  onclick="myFunction()">
         <span class="wrap-icon">
             <i class="icon-phone my-float"></i>
         </span>
-
     <span class="popuptext" id="myPopup">+91 9766728738</span>
 </a>
+<div class="label-container container2">
+    <div class="label-text">Give us a Ring </div>
+    <i class="icon-play label-arrow"></i>
+</div>
 	
  <a href="#" onclick="openForm()" class="float3">
      <span class="wrap-icon">
          <i class="icon-file-text my-float"></i>
      </span>
- </a>	
+ </a>
+ <div class="label-container container3">
+    <div class="label-text">Contact Us</div>
+    <i class="icon-play label-arrow"></i>
+</div>
+ 
+ <a href="#" class="float4">
+    <span class="wrap-icon">
+        <span class="my-float float-360">360 ⁰</span>
+        <!-- <i class="icon-life-bouy "></i> -->
+    </span>
+</a>
+<div class="label-container container4">
+    <div class="label-text">Get a 360 tour</div>
+    <i class="icon-play label-arrow"></i>
+</div>
 
 <a href="#" class="burger me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
 <span></span>
