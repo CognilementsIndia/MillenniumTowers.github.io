@@ -51,10 +51,11 @@ try {
         print_r($x);
         die();
         if($x){
-            echo '<script>
-            alert("Submitted Successfully");
-            window.location.href = "https://millenniumtower.in/";
-            </script>';
+            // echo '<script>
+            // alert("Submitted Successfully");
+            // window.location.href = "https://millenniumtower.in/";
+            // </script>';
+            header(location:"https://thankyou.html");
         }
         else{
         	echo '<script>

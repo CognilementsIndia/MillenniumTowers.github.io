@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="../../css2.css?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css fonts,,_flaticon,,_font,,_flaticon.css css,,_tiny-slider.css css,,_aos.css css,,_style.css,Mcc.4n512Inwoc.css.pagespeed.cf.yP9zdky6Ak.css">
+<title>Props &mdash; Free Bootstrap 5 Website Template by Colorlib</title>
+</head>
+<body>
+<div class="site-mobile-menu site-navbar-target">
+<div class="site-mobile-menu-header">
+<div class="site-mobile-menu-close">
+<span class="icofont-close js-menu-toggle"></span>
+</div>
+</div>
+<div class="site-mobile-menu-body"></div>
+</div>
+<nav class="site-nav">
+<div class="container">
+<div class="menu-bg-wrap">
+<div class="site-navigation">
+<a href="index.html"> 
+	<img class="float-start" src="images/MMTLogo Final (1)-04.png">
+</a>
+<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+<li class="active"><a href="index.html">Home</a></li>
+<li><a href="specifications.html">Specifications</a></li>
+<li><a href="amenities.html">Amenities</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li></li>
+</ul>
+
+<div class="form-popup" id="myForm"> 
+  <form class="form-container" name="brochure-form" id="brochureForm" onsubmit="return validateForm()" method="post">
+
+    <label  for="fname"><b>First Name</b></label>
+    <input type="text" id="fname" placeholder="Enter First Name" name="fname" required>
+
+    <label  for="lname"><b>Last Name</b></label>
+    <input type="text" id="lname" placeholder="Enter Last Name" name="lname" required>
+
+    <label for="phone"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="phone" required>
+
+
+    <label for="psw"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email Address" name="email" required>
+
+    <button type="submit" id="submit-form" value="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+<script>
+function validateForm() {
+   let x = document.forms["brochure-form"]["fname"].value;
+   if (x == "") {
+     alert("Name must be filled out");
+     return false;
+  }
+
+    if(validateForm())
+   {
+    const brochureForm = document
+            .querySelector("#brochureForm");
+  
+        const submitForm = document
+            .querySelector("#submit-form");
+  
+        submitForm.addEventListener("click", () => {
+  
+            // Creating element to download pdf
+            var element = document.createElement('a');
+  
+            // Setting the path to the pdf file
+            element.href = 'images/Mohanlal Bishnoi Logo (1).pdf';
+  
+            // Name to display as download
+            element.download = 'Brochure.pdf';
+  
+            // Adding element to the body
+            document.documentElement.appendChild(element);
+  
+            // Above code is quivalent to
+            // <a href="path to file" download="download name"/>
+  
+            // Trigger the file download
+            element.click();
+  
+            // Remove the element from the body
+            document.documentElement.remove(element);
+  
+            // Submit event, to submit the form
+            brochureForm.submit();
+        });
+
+   }
+
+</script>
+
+}
+<!--
+<script>
+ 
+        const brochureForm = document
+            .querySelector("#brochureForm");
+  
+        const submitForm = document
+            .querySelector("#submit-form");
+  
+        submitForm.addEventListener("click", () => {
+  
+            // Creating element to download pdf
+            var element = document.createElement('a');
+  
+            // Setting the path to the pdf file
+            element.href = 'images/Mohanlal Bishnoi Logo (1).pdf';
+  
+            // Name to display as download
+            element.download = 'Brochure.pdf';
+  
+            // Adding element to the body
+            document.documentElement.appendChild(element);
+  
+            // Above code is quivalent to
+            // <a href="path to file" download="download name"/>
+  
+            // Trigger the file download
+            element.click();
+  
+            // Remove the element from the body
+            document.documentElement.remove(element);
+  
+            // Submit event, to submit the form
+            brochureForm.submit();
+        });
+
+</script>
+<script>
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+-->
+</div>
+
+<div class="form-popup" id="enquiryForm"> 
+  <form class="form-container">
+
+    <label  for="name"><b>Name</b></label>
+    <input type="text" id="fname" placeholder="Enter First Name" name="fname" required>
+
+    <label for="phone"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="phone" required>
+
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email Address" name="email" required>
+
+    <label  for="subject"><b>Subject</b></label>
+    <input type="text" placeholder="Enter a Subject Line" name="sub" required>
+
+    <label  for="msg"><b>Your Message</b></label>
+    <input type="text" placeholder="Enter Your Message Here" name="msg" required>
+
+    <button type="submit" id="submit-form" value="submit" class="btn" name="submit-enquiry">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeEnquiryForm()">Close</button>
+    
+    </form>
+<!--
+   <script>
+
+    function openEnquiryForm() {
+        document.getElementById("enquiryForm").style.display = "block";
+    }
+
+    function closeEnquiryForm() {
+        document.getElementById("enquiryForm").style.display = "none";
+    }
+
+</script>
+-->
+
+</div>
+
+
+<a href="#" class="burger me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+<span></span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<div class="hero">
+<div class="hero-slide">
+<div class="img overlay" style="background-image:url(images/bg1.jpg)"></div>
+<div class="img overlay" style="background-image:url(images/bg2.jpg)"></div>
+</div>
+<div class="container">
+<div class="row justify-content-center align-items-center">
+<div class="col-lg-9 text-center">
+<h1 class="heading" data-aos="fade-up">Find the Right Office Space for your Business</h1>
+<p class="lead narrow-w mb-5" data-aos="fade-up" data-aos-delay="300">Millennium Tower houses best-in-class office specifications</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="features-1">
+<div class="container">
+<div class="row">
+<div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+<div class="box-feature">
+<span class="flaticon-house"></span>
+<h3>New Properties</h3>
+</div>
+</div>
+<div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+<div class="box-feature">
+<span class="flaticon-house-3"></span>
+<h3>Contact Agent</h3>
+</div>
+</div>
+<div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+<div class="box-feature">
+<span class="flaticon-building"></span>
+<h3>Building for Sale</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="section section-4">
+<div class="container">
+<div class="row justify-content-center  text-center mb-5">
+<div class="col-lg-6">
+<h2 class="font-weight-bold heading text-primary mb-4">Creating the Foundation for the Champions of Tomorrow</h2>
+<p class="text-black-50">Millennium Tower - Where Trust & Might Converge.</p>
+</div>
+</div>
+<div class="row justify-content-between mb-5">
+<div class="col-lg-7 mb-5 mb-lg-0">
+<div class="img-about dots">
+<img src="images/xhero_2.jpg.pagespeed.ic.AOyxa8iVal.jpg" alt="Image" class="img-fluid">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="d-flex feature-h">
+<span class="wrap-icon me-3">
+<span class="icon-home2"></span>
+</span>
+<div class="feature-text">
+<h3 class="heading">We provide best-in-class commercial spaces to the design-driven executive of today.</h3>
+<p class="text-black-50">Our aim is to add value to developable spaces with good design.</p>
+</div>
+</div>
+<div class="d-flex feature-h">
+<span class="wrap-icon me-3">
+<span class="icon-person"></span>
+</span>
+<div class="feature-text">
+<h3 class="heading">We are aligned with the evolving commercial requirements in design and space.</h3>
+<p class="text-black-50">To craft homes and workplaces with eco-friendly design.</p>
+</div>
+</div>
+<div class="d-flex feature-h">
+<span class="wrap-icon me-3">
+<span class="icon-security"></span>
+</span>
+<div class="feature-text">
+<h3 class="heading">We create valuable commercial spaces with design.</h3>
+<p class="text-black-50">To develop welcoming spaces; for inside and outside of work.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<a href="#" onclick="openEnquiryForm()" class="float1">
+    <span class="wrap-icon">
+        <i class="icon-file-text my-float"></i>
+    </span>
+</a>
+
+    <a href="#" class="float2 popup"  onclick="myFunction()">
+        <span class="wrap-icon">
+            <i class="icon-phone my-float"></i>
+        </span>
+
+    <span class="popuptext" id="myPopup">+91 8448272360</span>
+</a>
+
+
+<button target="_blank" class="open-button" onclick="openForm()">Brochure</button>
+
+<div class="site-footer">
+<div class="container">
+<div class="row justify-content-center mb-5 footer-cta">
+<div class="col-lg-7 mx-auto text-center">
+<h2 class="mb-4 ">Come, be part of the Millennium legacy!</h2>
+<p><a href="contact.html" target="_blank" class="btn btn-primary text-white py-3 px-4">Know More</a></p>
+</div> 
+</div> 
+<div class="row">
+<div class="col-lg-4">
+<div class="widget">
+<h3>Contact</h3>
+<address><span class="wrap-icon">
+<span class="icon-map-pin"></span>&nbsp; 201, Montvert apex, Opp. Orchid School,<br>Baner, Pune - 411045</address>
+<address><span class="wrap-icon">
+<span class="icon-map-pin"></span>&nbsp; S.No 36/2, Banglore-Mumbai Highway,Near Supreme HQ, Baner, Pune- 411045</address>
+<span class="wrap-icon">
+<span class="icon-phone"></span>&nbsp;&nbsp;<a href="tel://11234567890">+91 8448272360</a><br><br>
+<span class="wrap-icon">
+<span class="icon-envelope"></span>&nbsp;&nbsp;<a href="mailto:Sales@millenniumtower.in">Sales@millenniumtower.in</a>
+</div> 
+</div> 
+<div class="col-lg-4">
+<div class="widget widget-2">
+<h3>Menu</h3>
+<ul class="list-unstyled links">
+<li><a href="about.html">About us</a></li>
+<li><a href="amenities.html">Amenities</a></li>
+<li><a href="specifications.html">Specifications</a></li>
+<li><a href="contact.html">Contact us</a></li>
+</ul>
+</div> 
+</div> 
+<div class="col-lg-4">
+<div class="widget">
+<h3>Connect with Us</h3>
+<ul class="list-unstyled social">
+<li><a href="https://www.instagram.com/mmt_pune/"><span class="icon-instagram"></span></a></li>
+<li><a href="https://www.facebook.com/millenniumtowerpune"><span class="icon-facebook"></span></a></li>
+<li><a href="https://www.linkedin.com/company/79577382/admin/"><span class="icon-linkedin"></span></a></li>
+<li><a href="https://www.youtube.com/channel/UCMbyBq01nB8vRfKtpDcjFiw"><span class="icon-youtube"></span></a></li>
+<li><a href="https://twitter.com/MmtPune"><span class="icon-twitter"></span></a></li>
+<br><br>
+<p>MahaRERA No. P52100023611</p>
+</div>
+</ul>
+</div> 
+</div> 
+</div> 
+<div class="row mt-5">
+<div class="col-12 text-center">
+<p class="mb-0">Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> Millennium Tower is Proudly Powered by <a href="../../index.html" target="_blank" rel="nofollow noopener">Cognilements</a></p>
+</div>
+</div>
+</div> 
+</div> 
+
+<div id="overlayer"></div>
+<div class="loader">
+<div class="spinner-border" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/float-options.js"></script>
+<script src="js/aos.js navbar.js counter.js custom.js.pagespeed.jc.71zJnt3rs0.js"></script><script>eval(mod_pagespeed_G7G3GqP5Ne);</script>
+<script src="js/carousel.js"></script>
+<script>eval(mod_pagespeed_GV7tYr4Kqb);</script>
+<script>eval(mod_pagespeed_h1rI$WP$Np);</script>
+<script>eval(mod_pagespeed_sQHpjDBzQZ);</script>
+
+<script async="" src="../../gtag/js.js?id=UA-23581568-13"></script>
+<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+<script defer="" src="../../beacon.min.js" data-cf-beacon='{"rayId":"66137a117ac10e1c","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.5.2","si":10}'></script>
+</body>
+</html>

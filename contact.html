@@ -54,7 +54,8 @@ src="https://www.facebook.com/tr?id=1155069701639683&ev=PageView&noscript=1"
 <li><a href="about.html">About</a></li>
 <li><a href="specifications.html">Specifications</a></li>
 <li><a href="amenities.html">Amenities</a></li>
-<li><a href="gallery.html">Gallery</a></li>
+<!-- <li><a href="gallery.html">Gallery</a></li> -->
+<li><a href="floor-plans.html">Floor Plans</a></li>
 <li class="active"><a href="contact.html">Contact Us</a></li>
 </ul>
 <div class="form-popup" id="myForm"> 
@@ -172,28 +173,29 @@ src="https://www.facebook.com/tr?id=1155069701639683&ev=PageView&noscript=1"
 </div>
 </div>
 <div class="section section-4 border-top">
-<div class="container">
+<div class="container container5">
 <div class="row text-center mb-5">
 <div class="col-lg-12">
 <h2 class="font-weight-bold heading text-primary mb-4">Get In Touch</h2>
 <p class="text-black-50">For booking or any other queries, kindly leave your contact details in the field below. Our team will get in touch with you.</p>
 </div>
 </div>
-<form class="row">
+<form class="row" id="contactForm" >
+  <input type="hidden" value="1" name="contact"> 
 <div class="mb-3 col-lg-6">
-<input type="text" class="form-control" placeholder="Name">
+<input type="text" class="form-control" placeholder="Name" name="contactName">
 </div>
 <div class="mb-3 col-lg-6">
-<input type="text" class="form-control" placeholder="Email Address">
+<input type="text" class="form-control" placeholder="Email Address" name="contactMail">
 </div>
 <div class="mb-3 col-lg-6">
-<input type="text" class="form-control" placeholder="Subject">
+<input type="text" class="form-control" placeholder="Subject" name="contactSubject">
 </div>
 <div class="mb-3 col-lg-6">
-<input type="text" class="form-control" placeholder="Phone">
+<input type="text" class="form-control" placeholder="Phone" name="contactPhone">
 </div>
 <div class="mb-3 col-lg-12">
-<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Write your message here..."></textarea>
+<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Write your message here..." name="contactMsg"></textarea>
 </div>
 <div class="mb-3 col-lg-12">
 <input type="text" class="btn btn-primary" value="Send Message">
@@ -269,19 +271,20 @@ src="https://www.facebook.com/tr?id=1155069701639683&ev=PageView&noscript=1"
 </div> 
 </div> 
 <div class="col-lg-4">
-<div class="widget">
-<h3>Connect with Us</h3>
-<ul class="list-unstyled social">
-<li><a href="https://www.instagram.com/mmt_pune/" target="_blank"><span class="icon-instagram"></span></a></li>
-<li><a href="https://www.facebook.com/millenniumtowerpune" target="_blank"><span class="icon-facebook"></span></a></li>
-<li><a href="https://www.linkedin.com/company/79577382/admin/" target="_blank"><span class="icon-linkedin"></span></a></li>
-<li><a href="https://www.youtube.com/channel/UCMbyBq01nB8vRfKtpDcjFiw" target="_blank"><span class="icon-youtube"></span></a></li>
-<li><a href="https://twitter.com/MmtPune"><span class="icon-twitter" target="_blank"></span></a></li>
-<br><br>
-<p>MahaRERA No. P52100023611</p>
-</div>
-</ul>
-</div> 
+  <div class="widget">
+  <h3>Connect with Us</h3>
+  <ul class="list-unstyled social">
+  <li><a href="https://www.instagram.com/mmt_pune/" target="_blank"><span class="icon-instagram"></span></a></li>
+  <li><a href="https://www.facebook.com/millenniumtowerpune" target="_blank"><span class="icon-facebook"></span></a></li>
+  <li><a href="https://www.linkedin.com/company/79577382/admin/" target="_blank"><span class="icon-linkedin"></span></a></li>
+  <li><a href="https://www.youtube.com/channel/UCMbyBq01nB8vRfKtpDcjFiw" target="_blank"><span class="icon-youtube"></span></a></li>
+  <li><a href="https://twitter.com/MmtPune"><span class="icon-twitter" target="_blank"></span></a></li>
+  <br><br>
+  </ul>
+  
+  <a href="https://maharerait.mahaonline.gov.in/searchlist/search" target="_blank">MahaRERA No. P52100023611</a>
+  </div>
+  </div>  
 </div> 
 </div> 
 <div class="row mt-5">

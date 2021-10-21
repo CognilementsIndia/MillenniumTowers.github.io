@@ -1,0 +1,17 @@
+[07-Jul-2021 21:30:20 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:11) in /home2/millenn2/public_html/enquiry.php on line 25
+[07-Jul-2021 21:36:16 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:11) in /home2/millenn2/public_html/enquiry.php on line 25
+[07-Jul-2021 21:38:58 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:11) in /home2/millenn2/public_html/enquiry.php on line 24
+[07-Jul-2021 21:43:29 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:11) in /home2/millenn2/public_html/enquiry.php on line 24
+[07-Jul-2021 21:47:18 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:11) in /home2/millenn2/public_html/enquiry.php on line 24
+[09-Jul-2021 01:51:31 America/Boise] PHP Parse error:  syntax error, unexpected 'a' (T_STRING), expecting ';' or ',' in /home2/millenn2/public_html/enquiry.php on line 52
+[09-Jul-2021 02:18:39 America/Boise] PHP Fatal error:  Cannot use [] for reading in /home2/millenn2/public_html/enquiry.php on line 66
+[09-Jul-2021 02:18:59 America/Boise] PHP Fatal error:  Cannot use [] for reading in /home2/millenn2/public_html/enquiry.php on line 66
+[09-Jul-2021 02:45:48 America/Boise] PHP Warning:  readfile(Brochure.pdf): failed to open stream: No such file or directory in /home2/millenn2/public_html/enquiry.php on line 83
+[09-Jul-2021 02:45:55 America/Boise] PHP Warning:  readfile(Brochure.pdf): failed to open stream: No such file or directory in /home2/millenn2/public_html/enquiry.php on line 83
+[09-Jul-2021 02:47:11 America/Boise] PHP Warning:  readfile(Brochure.pdf): failed to open stream: No such file or directory in /home2/millenn2/public_html/enquiry.php on line 83
+[09-Jul-2021 02:47:50 America/Boise] PHP Warning:  readfile(Brochure.pdf): failed to open stream: No such file or directory in /home2/millenn2/public_html/enquiry.php on line 83
+[09-Jul-2021 02:55:22 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:85) in /home2/millenn2/public_html/enquiry.php on line 95
+[09-Jul-2021 02:55:22 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:85) in /home2/millenn2/public_html/enquiry.php on line 96
+[09-Jul-2021 02:55:22 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/millenn2/public_html/enquiry.php:85) in /home2/millenn2/public_html/enquiry.php on line 97
+[21-Jul-2021 07:26:50 America/Boise] PHP Parse error:  syntax error, unexpected end of file in /home2/millenn2/public_html/enquirySubmit.php on line 55
+[21-Jul-2021 07:29:52 America/Boise] PHP Parse error:  syntax error, unexpected end of file in /home2/millenn2/public_html/enquirySubmit.php on line 55
